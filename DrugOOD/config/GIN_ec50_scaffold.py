@@ -1,0 +1,23 @@
+model = dict(
+    encoder=dict(
+        type='GIN',
+        num_node_emb_list=[39],
+        num_edge_emb_list=[10],
+        num_layers=4,
+        emb_dim=256,
+        readout='mean',
+        JK='last',
+        dropout=0.3,
+    ),
+    subencoder=dict(
+        type='GIN',
+        num_node_emb_list=[39],
+        num_edge_emb_list=[10],
+        num_layers=2,
+        emb_dim=256,
+        readout='mean',
+        JK='last',
+        dropout=0.3,
+    ),
+)
+drop_ratio=0.1

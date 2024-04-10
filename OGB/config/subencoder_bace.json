@@ -1,0 +1,12 @@
+{
+    "type": "gin",
+    "params": {
+        "num_layer": 4,
+        "drop_ratio": 0.3,
+        "JK": "last",
+        "graph_pooling": "mean",
+        "residual": false,
+        "emb_dim": 32
+    },
+    "result_dim": 32
+}
